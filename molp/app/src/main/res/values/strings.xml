@@ -1,0 +1,25 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">molp</string>
+    <string name="checkb1">Extra Cheese+\u20B93</string>
+    <string name="checkb2">Extra Choco+\u20B95</string>
+    <string name="editt1">Enter you Name</string>
+    <string name="textv1">Toppings</string>
+    <string name="textv2">Quantity</string>
+    <string name="bt1">-</string>
+    <string name="bt2">+</string>
+    <string name="bt3">Check order</string>
+    <string name="bt4">Reset</string>
+    <string name="bt5">Send order</string>
+    <string name="textv3">0</string>
+    <string name="textv4">Price</string>
+    <string name="textv5">\u20B970-(Burger per piece)</string>
+    <string name="order_summary">Order Summary</string>
+    <!-- Example placeholder for a name -->
+    <string name="To_name">To: <xliff:g id="naming" example="yashpal">%s</xliff:g></string>
+    <string name="quantiry">Quantity: <xliff:g id="qwan" example="1">%d</xliff:g></string>
+    <string name="topping1">Topping:Extra cheese</string>
+    <string name="topping2">Topping:With EXtra Choco</string>
+    <string name="totalinr">Total: \u20B9</string>
+    <string name="text_on_reset">\u20B970-(Burger per piece)</string>
+    <string name="price_on_reset">Price</string>
+</resources>

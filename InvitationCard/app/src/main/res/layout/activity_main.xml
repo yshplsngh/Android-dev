@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bbc"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="26dp"
+            android:src="@drawable/cake" />
+
+        <TextView
+            android:id="@+id/hb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Happy Birthday"
+            android:paddingLeft="30dp"
+            android:textColor="#2F4F4F"
+            android:textSize="83dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/dys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textColor="#2F4F4F"
+            android:textSize="44dp"
+            android:paddingLeft="50dp"
+            android:text="dear, Yashpal singh"
+            android:layout_below="@id/hb"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textColor="#2F4F4F"
+            android:textSize="34dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@id/dys"
+            android:text="“Wishing you a day filled with happiness and a year filled with joy. Happy birthday!”"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

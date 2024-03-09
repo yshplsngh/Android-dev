@@ -1,0 +1,237 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textSize="30dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="0"
+        android:paddingBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/tv3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="30dp"
+        android:backgroundTint="#D3D3D3"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/tv5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(310-per piece)"
+        android:textSize="15dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="0"
+        android:paddingBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv5"
+        android:layout_marginLeft="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:text="Order"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:backgroundTint="#D3D3D3"
+        android:onClick="submitOrder"
+        />
+</LinearLayout>
+
+
+package com.example.scipo;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.text.NumberFormat;
+
+public class MainActivity extends AppCompatActivity {
+    int c=0;
+    public void submitOrder(View view){
+        c = c+1;
+        TextView tv2 = (TextView) findViewById(R.id.tv2);
+        tv2.setText("" + c);
+        TextView tv4 = (TextView) findViewById(R.id.tv4);
+        tv4.setText(NumberFormat.getCurrencyInstance().format(c*70));
+//        tv4.setText(""+c*310);
+    }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="+3 Points"
+        android:backgroundTint="#FF8C00"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="+2 Points"
+        android:backgroundTint="#FF8C00"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Free Throw"
+        android:backgroundTint="#FF8C00"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:layout_height="wrap_content"
+tools:context=".MainActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Team A"
+    android:textSize="30dp"
+    android:textStyle="bold"
+    android:gravity="center_horizontal"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="0"
+    android:textSize="60dp"
+    android:textStyle="bold"
+    android:layout_marginTop="30dp"
+    android:gravity="center_horizontal"/>
+
+<Button
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:text="+3 Points"
+    android:backgroundTint="#FF8C00"
+    android:layout_marginTop="50dp"
+    android:layout_gravity="center_horizontal"/>
+<Button
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:text="+2 Points"
+    android:backgroundTint="#FF8C00"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center_horizontal"/>
+<Button
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:text="Free Throw"
+    android:backgroundTint="#FF8C00"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center_horizontal"/>
+</LinearLayout>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/a">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Happy Birthday Yashpal"
+            android:textColor="#FFFFE0"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignP
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="From God"
+            android:textColor="#FFFFE0"
+            android:textSize="60sp" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+-------------------------------------------------------------------------------------------------------------------------
+

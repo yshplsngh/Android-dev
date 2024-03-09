@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">compo</string>
+    <string name="send_message">send</string>
+    <string name="receive_message">recive</string>
+    <string name="apply_message">apply</string>
+    <string name="user_photo">DP</string>
+</resources>

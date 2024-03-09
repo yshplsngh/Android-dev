@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bc" />
+    <TextView
+        android:id="@+id/hello_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_toRightOf="@id/img_imageview"/>
+    <TextView
+        android:id="@+id/world_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="world"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_below="@+id/hello_textview"
+        android:layout_toRightOf="@id/img_imageview"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="i'am yashpal singh"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_toRightOf="@id/img_imageview"
+        android:layout_below="@id/world_textview"/>
+</RelativeLayout>

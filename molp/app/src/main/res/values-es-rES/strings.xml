@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">molp</string>
+    <string name="textv1">ingredients</string>
+    <string name="checkb1">chess spanis</string>
+    <string name="checkb2">chcoc spanis</string>
+    <string name="editt1">name spanis</string>
+    <string name="textv2">qwoantity spanis</string>
+    <string name="bt1">+</string>
+    <string name="bt2">-</string>
+    <string name="bt3">check spanis</string>
+    <string name="bt4">reset spanis</string>
+    <string name="bt5">send spanisspanis</string>
+    <string name="textv3">0</string>
+    <string name="textv4">price spanis</string>
+    <string name="textv5">burger perpiesce  spanis</string>
+    <string name="order_summary">order summart spanis</string>
+    <string name="To_name">to span <xliff:g id="naming" example="yashpal">%s</xliff:g></string>
+    <string name="quantiry">quantity span <xliff:g id="qwan" example="1">%d</xliff:g></string>
+    <string name="topping1">Topping extra cheese spam</string>
+    <string name="topping2">Topping extra choco spam</string>
+    <string name="totalinr">totoal in spam</string>
+    <string name="text_on_reset">765 burger per piece</string>
+    <string name="price_on_reset">price span</string>
+</resources>
